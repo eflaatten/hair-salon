@@ -5,31 +5,162 @@
   --tan: #F0EDCF;
   --dark-blue: #002251;
   --white: #FFFFFF;
+  --teal: #002f4c;
+  --light-gray: #009696;
+  --gradient: linear-gradient(90deg, #40A2D8 0%, #002251 100%);
 }
 
 body {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
   margin: 0;
   padding: 0;
   height: 100vh;
   background-color: var(--white);
+}
+
+.section {
+  grid-row: 1/2;
+  background-color: var(--light-gray);
+  height: 15vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
 }
 
-header {
-  grid-column: 1/4;
-  background-color: var(--light-blue);
-  height: 20%;
-}
-
-.logo {
-  margin-left: 300px;
-  margin-top: 80px;
-  background-color: var(--black);
+.section .logo {
+  grid-column: 2/3;
+  margin-left: 90px;
+  margin-top: 65px;
+  background-color: var(--dark-blue);
   color: var(--white);
   font-family: 'Wallpoet', sans-serif;
-  font-size: 100px;
-  width: 35%;
   text-align: center;
+  font-size: 60px;
+  width: 324px;
+  height: 150px;
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  /* HOVER OFF */
+  transition: 0.5s;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.logo:hover {
+  background-color: var(--light-blue);
+  width: 340px;
+  height: 170px;
+  border-radius: 10px;
+
+  /* HOVER ON */
+  transition: 0.5s;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 100vh;
+}
+
+.main-container .image-container {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--dark-blue);
+  border-radius: 10px;
+  background-image: url('./img/haircut2.jpg');
+  background-size: cover;
+  height: 500px;
+  color: var(--white);
+  font-family: "Outfit", sans-serif;
+  font-size: 60px;
+  text-decoration-line: underline;
+}
+
+.gallery-previews {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.gallery-previews .preview-one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 10px solid var(--dark-blue);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.gallery-previews .preview-one:hover {
+  background-color: var(--white);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.gallery-previews .preview-two {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 10px solid var(--dark-blue);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.gallery-previews .preview-two:hover {
+  background-color: var(--white);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.gallery-previews .preview-three {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 10px solid var(--dark-blue);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.gallery-previews .preview-three:hover {
+  background-color: var(--white);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.gallery-previews p {
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 17px;
+  margin-top: 10px;
+
+}
+
+footer {
+  background-color: var(--light-gray);
+  color: var(--white);
+  height: 10vh;
 }
