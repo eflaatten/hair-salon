@@ -15,7 +15,10 @@ body {
   padding: 0;
   height: 100vh;
   background-color: var(--white);
+  overflow: auto;
 }
+
+/* TOP OF PAGE */
 
 .section {
   grid-row: 1/2;
@@ -62,6 +65,8 @@ body {
   transition: 0.5s;
 }
 
+/* MAIN PHOTO */
+
 .main-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -87,12 +92,14 @@ body {
   text-decoration-line: underline;
 }
 
+/* GALLERY SECTION  */
+
 .gallery-previews {
   grid-column: 2/4;
   grid-row: 2/3;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
   gap: 25px;
   margin-top: 50px;
 }
@@ -134,7 +141,7 @@ body {
 }
 
 .gallery-previews .preview-three {
-  grid-column: 3/4;
+  grid-column: 4/5;
   grid-row: 1/2;
   width: 100%;
   height: 100%;
@@ -151,12 +158,175 @@ body {
   transition: 0.5s;
 }
 
+.gallery-previews .preview-four {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 10px solid var(--dark-blue);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.gallery-previews .preview-four:hover {
+  background-color: var(--white);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.gallery-previews h1{
+  grid-row: 2/3;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+}
+
 .gallery-previews p {
   text-align: center;
   font-family: "Outfit", sans-serif;
   font-size: 17px;
-  margin-top: 10px;
+}
 
+/* BOTTOM SECTION */
+
+.third-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.third-container .featured-section {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column: 2/3;
+  grid-row: 1/4;
+  margin-bottom: 50px;
+  border: 5px solid var(--dark-blue);
+  border-radius: 10px;
+  padding: 85px 12px 50px 20px;
+  width: 70%;
+}
+
+.third-container .featured-section .featured-tag {
+  padding: 0 25px;
+  grid-row: 1/2;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: var(--white);
+  height: 47px;
+  letter-spacing: 0.1em;
+  line-height: 47px;
+  margin-bottom: 20px;
+  background-color: var(--dark-blue);
+  top: 1435;
+  position: absolute;
+
+}
+
+.third-container .featured-section img {
+  border-radius: 2px;
+}
+
+.third-container .hairstyle-section {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  height: 80%;
+  width: 80%;
+  margin: -80px 0 0 0;
+  background-color: var(--light-gray);
+  color: var(--white);
+  border: 5px solid var(--dark-blue);
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+}
+
+.third-container .hairstyle-tag {
+  padding: 0 25px;
+  grid-row: 1/2;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: var(--white);
+  height: 47px;
+  letter-spacing: 0.1em;
+  line-height: 47px;
+  margin-bottom: 20px;
+  background-color: var(--dark-blue);
+  top: 1435;
+  right: 1020;
+  position: absolute;
+}
+
+.third-container .hairstyle-section p {
+  grid-row: 1/2;
+  font-size: 16px;
+  margin: 80px 20px 0 20px;
+  text-align: start;
+}
+
+.third-container .hairstyle-section h1 {
+  grid-row: 2/3;
+  text-align: end;
+  font-size: 25px;
+  margin: 20px 20px 20px 0;
+
+}
+
+.third-container .featured-section img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.third-container .featured-section h1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font-family: "Outfit", sans-serif;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0 0 0 20px;
+}
+
+.third-container .featured-section p {
+  grid-column: 1/2;
+  text-align: start;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.third-container .third-section {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin-top: 30px;
+  border: 5px solid var(--dark-blue);
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  width: 80%;
+  height: 70%;
+
+
+}
+
+.third-container .third-section img {
+  border-radius: 10px;
+  position: relative;
+  top: -80;
+  right: 140;
 }
 
 footer {
