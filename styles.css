@@ -18,66 +18,20 @@ body {
   overflow: auto;
 }
 
-/* TOP OF PAGE */
-
-.section {
-  grid-row: 1/2;
-  background-color: var(--light-gray);
-  height: 15vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-}
-
-.section .logo {
-  grid-column: 2/3;
-  margin-left: 90px;
-  margin-top: 65px;
-  background-color: var(--dark-blue);
-  color: var(--white);
-  font-family: 'Wallpoet', sans-serif;
-  text-align: center;
-  font-size: 60px;
-  width: 324px;
-  height: 150px;
-  line-height: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-
-  /* HOVER OFF */
-  transition: 0.5s;
-}
-
-.logo a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-.logo:hover {
-  background-color: var(--light-blue);
-  width: 340px;
-  height: 170px;
-  border-radius: 10px;
-
-  /* HOVER ON */
-  transition: 0.5s;
-}
-
 /* MAIN PHOTO */
 
 .main-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  height: 100vh;
+  grid-template-rows: 1fr;
+  height: auto;
+  margin-bottom: 200px;
 }
 
 .main-container .image-container {
-  grid-column: 2/4;
+  grid-column: 1/5;
   grid-row: 1/2;
-  margin-top: 100px;
+  margin: 100px 50px 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,40 +39,33 @@ body {
   border-radius: 10px;
   background-image: url('./img/haircut2.jpg');
   background-size: cover;
-  height: 500px;
+  height: 900px;
   color: var(--white);
   font-family: "Outfit", sans-serif;
   font-size: 60px;
   text-decoration-line: underline;
+  text-align: center;
 }
 
 /* GALLERY SECTION  */
 
 .gallery-previews {
-  grid-column: 2/4;
+  grid-column: 1/5;
   grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
   gap: 25px;
   margin-top: 50px;
+  padding: 0 50px 0 50px;
 }
+
+
 
 .gallery-previews .preview-one {
   grid-column: 1/2;
   grid-row: 1/2;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border: 10px solid var(--dark-blue);
-  border-radius: 10px;
-  transition: 0.5s;
-}
-
-.gallery-previews .preview-one:hover {
-  background-color: var(--white);
-  opacity: 0.5;
-  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -127,16 +74,6 @@ body {
   grid-row: 1/2;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border: 10px solid var(--dark-blue);
-  border-radius: 10px;
-  transition: 0.5s;
-}
-
-.gallery-previews .preview-two:hover {
-  background-color: var(--white);
-  opacity: 0.5;
-  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -145,16 +82,6 @@ body {
   grid-row: 1/2;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border: 10px solid var(--dark-blue);
-  border-radius: 10px;
-  transition: 0.5s;
-}
-
-.gallery-previews .preview-three:hover {
-  background-color: var(--white);
-  opacity: 0.5;
-  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -163,12 +90,21 @@ body {
   grid-row: 1/2;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border: 10px solid var(--dark-blue);
-  border-radius: 10px;
   transition: 0.5s;
 }
 
+.gallery-previews .preview-one img,
+.gallery-previews .preview-two img,
+.gallery-previews .preview-three img,
+.gallery-previews .preview-four img {
+  border: 10px solid var(--dark-blue);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-previews .preview-one:hover,
+.gallery-previews .preview-two:hover,
+.gallery-previews .preview-three:hover,
 .gallery-previews .preview-four:hover {
   background-color: var(--white);
   opacity: 0.5;
@@ -180,20 +116,20 @@ body {
   grid-row: 2/3;
   text-align: center;
   font-family: "Outfit", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .gallery-previews p {
   text-align: center;
   font-family: "Outfit", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /* BOTTOM SECTION */
 
 .third-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
@@ -207,9 +143,38 @@ body {
   margin-bottom: 50px;
   border: 5px solid var(--dark-blue);
   border-radius: 10px;
-  padding: 85px 12px 50px 20px;
-  width: 70%;
+  padding: 30px 0px 35px 14px;
 }
+
+.third-container .featured-section img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  transform: scaleX(-1);
+}
+
+.third-container .featured-section h1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font-family: "Outfit", sans-serif;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.third-container .featured-section p {
+  grid-column: 1/2;
+  text-align: start;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
 
 .third-container .featured-section .featured-tag {
   padding: 0 25px;
@@ -221,21 +186,15 @@ body {
   height: 47px;
   letter-spacing: 0.1em;
   line-height: 47px;
-  margin-bottom: 20px;
   background-color: var(--dark-blue);
-  top: 1435;
   position: absolute;
+  margin: 0;
 
-}
-
-.third-container .featured-section img {
-  border-radius: 2px;
 }
 
 .third-container .hairstyle-section {
   display: grid;
   grid-template-rows: 2fr 1fr;
-  grid-column: 3/4;
   grid-row: 1/2;
   height: 80%;
   width: 80%;
@@ -277,36 +236,6 @@ body {
   font-size: 25px;
   margin: 20px 20px 20px 0;
 
-}
-
-.third-container .featured-section img {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-.third-container .featured-section h1 {
-  grid-row: 1/2;
-  grid-column: 1/2;
-  font-family: "Outfit", sans-serif;
-  font-size: 25px;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 0 0 0 20px;
-}
-
-.third-container .featured-section p {
-  grid-column: 1/2;
-  text-align: start;
-  font-family: "Outfit", sans-serif;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
 }
 
 .third-container .third-section {
