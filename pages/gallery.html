@@ -2,12 +2,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hair Salon</title>
+  <title>ZIZURZ - Hairstyles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+  <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+  <script src="../scripts/index-script.js"></script>
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="../styles/gallery-styles.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
 </head>
 <body>
+  <header>
+    <div class="section">
+      <div class="logo">
+        <a href="../index.html">ZIZURZ</a>
+      </div>
   
+      <nav>
+        <ul>
+          <li><a href="../index.html" id="home" onclick="activateTab(this)">Home</a></li>
+          <li><a href="../pages/about.html" id="about" onclick="activateTab(this)">About</a></li>
+          <li><a href="../pages/gallery.html" id="gallery" onclick="activateTab(this)">Hairstyles</a></li>
+          <li><a href="../pages/blog.html" id="blog" onclick="activateTab(this)">News</a></li>
+          <li><a href="../pages/contact.html" id="contact" onclick="activateTab(this)">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main-container">
+
+    <div class="image-container">
+      <img id="image-one" src="../img/hairstyles/haircut-1.jpg">
+      <img id="image-two" src="../img/hairstyles/haircut-2.jpg">
+      <img id="image-three" src="../img/hairstyles/haircut-3.jpg">
+    </div>
+
+    <div class="image-container">
+      <img id="image-four" src="../img/hairstyles/haircut-4.jpg">
+      <img id="image-five" src="../img/hairstyles/haircut-5.jpg">
+      <img id="image-six" src="../img/hairstyles/haircut-6.jpg">
+    </div>
+
+    <div class="image-container">
+      <img id="image-seven" src="../img/hairstyles/haircut-7.jpg">
+      <img id="image-eight" src="../img/hairstyles/haircut-8.jpg">
+      <img id="image-nine" src="../img/hairstyles/haircut-9.png">
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>© copyright 2023 | all rights reserved</p>
+    </div>
+  </footer>
 </body>
 </html>

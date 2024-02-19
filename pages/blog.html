@@ -2,12 +2,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hair Salon</title>
+  <title>ZIZURZ - News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+  <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+  <script src="../scripts/index-script.js"></script>
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="../styles/blog-styles.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
 </head>
 <body>
+  <header>
+    <div class="section">
+      <div class="logo">
+        <a href="../index.html">ZIZURZ</a>
+      </div>
   
+      <nav>
+        <ul>
+          <li><a href="../index.html" id="home" onclick="activateTab(this)">Home</a></li>
+          <li><a href="../pages/about.html" id="about" onclick="activateTab(this)">About</a></li>
+          <li><a href="../pages/gallery.html" id="gallery" onclick="activateTab(this)">Hairstyles</a></li>
+          <li><a href="../pages/blog.html" id="blog" onclick="activateTab(this)">News</a></li>
+          <li><a href="../pages/contact.html" id="contact" onclick="activateTab(this)">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main-container">
+
+    <div class="left-section">
+      <h1 id="news">News</h1>
+      <p id="news-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet iusto, hic asperiores quod aspernatur suscipit similique dolorem porro praesentium cum quidem ex repellendus facilis saepe debitis necessitatibus ducimus tenetur qui.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet iusto, hic asperiores quod aspernatur suscipit similique dolorem porro praesentium cum quidem ex repellendus facilis saepe debitis necessitatibus ducimus tenetur qui.
+      </p>
+    </div>
+
+    <div class="right-section">
+
+      <h1 id="recent-news">Recent News</h1>
+
+      <div class="articles">
+        <h2 id="first-header">Hair, I just met you</h2>
+        <p id="first-article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda nihil, itaque aliquid dignissimos ullam? Ullam quam nulla aut error aliquam iste voluptatum perspiciatis dolorum sint. Molestias architecto vero dolorem!</p>
+        <h2 id="second-header">Styling Hair</h2>
+        <p id="second-article">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et doloribus itaque magnam enim eaque quia ratione cumque id, officiis pariatur atque cupiditate quisquam mollitia, amet vel temporibus illo ea velit.</p>
+        <h2 id="third-header">How to pick the right hairstyle</h2>
+        <p id="third-article">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, quaerat at cum velit libero dignissimos! Sed provident quibusdam harum qui, vitae excepturi distinctio optio commodi. Corporis possimus ullam facere quasi.</p>
+      </div>
+    
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-content">
+      <p>© copyright 2023 | all rights reserved</p>
+    </div>
+  </footer>
 </body>
 </html>

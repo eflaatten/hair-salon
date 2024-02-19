@@ -7,6 +7,9 @@
 
 .section nav {
   grid-column: 3/4;
+  position: relative;
+  margin: 0 0 0 50%;
+  top: -25;
 }
 
 .section nav ul {
@@ -14,7 +17,7 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin-top: 70px;
+  margin-top: 120px;
   margin-left: 300px;
 }
 
@@ -40,21 +43,28 @@
   transition: 0.2s;
 }
 
+nav ul li a .active {
+  color: var(--blue);
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
 /* TOP OF PAGE */
 
 .section {
   grid-row: 1/2;
   background-color: var(--light-gray);
-  height: 15vh;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
 }
 
-.section .logo {
+.logo {
   grid-column: 2/3;
-  margin-left: 35px;
-  margin-top: 20px;
+  position: relative;
+  top: 25;
   background-color: var(--dark-blue);
   color: var(--white);
   font-family: 'Wallpoet', sans-serif;
@@ -72,17 +82,20 @@
   transition: 0.5s;
 }
 
+
 .logo a {
   text-decoration: none;
   color: var(--white);
 }
 
+
 .logo:hover {
   background-color: var(--light-blue);
-  width: 340px;
-  height: 170px;
+  width: 330px;
+  height: 160px;
   border-radius: 10px;
 
-  /* HOVER ON */
   transition: 0.5s;
 }
+
+

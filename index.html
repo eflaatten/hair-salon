@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="./scripts/index-script.js"></script>
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/normalize.css">
@@ -26,13 +27,13 @@
         <a href="./index.html">ZIZURZ</a>
       </div>
   
-      <nav>
+      <nav id="navbar">
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/about.html">About</a></li>
-          <li><a href="./pages/gallery.html">Gallery</a></li>
-          <li><a href="./pages/blog.html">Blog</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
+          <li class="btn active"><a href="./index.html" id="home">Home</a></li>
+          <li class="btn"><a href="./pages/about.html">About</a></li>
+          <li class="btn"><a href="./pages/gallery.html">Hairstyles</a></li>
+          <li class="btn"><a href="./pages/blog.html" id="blog">News</a></li>
+          <li class="btn"><a href="./pages/contact.html" id="contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -56,7 +57,7 @@
       <h1>Featured hairstyles</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam minus, earum praesentium incidunt, facilis molestias autem odio amet consequatur inventore corporis eos aut dolorum suscipit non quod reiciendis perferendis?</p>
       <div class="preview-four">
-        <img src="./img/gallery/gallery_preview_4.jpg" alt="washing hair">
+        <img src="./img/gallery/gallery_preview_4.jpg" onclick="navigateTo('./pages/gallery.html')" alt="washing hair">
       </div>
 
       <h1>Hair care</h1>
@@ -78,28 +79,35 @@
       <img src="./img/featured_img.jpg" alt="woman side profile photo">
       <h1>Hair I just met you</h1>
 
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam minus, earum praesentium incidunt, facilis molestias autem odio amet consequatur inventore corporis eos aut dolorum suscipit non quod reiciendis perferendis?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam minus, earum praesentium incidunt,
+         facilis molestias autem odio amet consequatur inventore corporis eos aut dolorum suscipit non quod reiciendis perferendis?
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam minus, earum praesentium incidunt,
+         facilis molestias autem odio amet consequatur inventore corporis eos aut dolorum suscipit non quod reiciendis perferendis?</p>
 
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam minus, earum praesentium incidunt, facilis molestias autem odio amet consequatur inventore corporis eos aut dolorum suscipit non quod reiciendis perferendis?</p>
-
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam minus, earum praesentium incidunt, facilis molestias autem odio amet consequatur inventore corporis eos aut dolorum suscipit non quod reiciendis perferendis?</p>
-
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam minus, earum praesentium incidunt,
+          facilis molestias autem odio amet consequatur inventore corporis eos aut dolorum suscipit non quod reiciendis perferendis?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam minus, earum praesentium incidunt,
+          facilis molestias autem odio amet consequatur inventore corporis eos aut dolorum suscipit non quod reiciendis perferendis?</p>
     </div>
 
-    <div class="hairstyle-tag">HAIRSTYLE</div>
-
+    
     <div class="hairstyle-section">
+      <div class="hairstyle-tag">HAIRSTYLE</div>
+      
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam minus, earum praesentium incidunt, facilis molestias autem odio amet consequatur inventore corporis eos aut dolorum suscipit non quod reiciendis perferendis?</p>
-      <h1>Mike M.</h1>
+      <h1>- Mike M.</h1>
     </div>
 
-    <div class="third-section">
-      <img src="./img/bald_sad.png" alt="crying bald man">
-      <!-- <p>Are you losing your hair? Let us help you in bringing back your confidence. Call Us at 1800-0000-0000</p> -->
-    </div>
+    <!-- <div class="third-section">
+      <p>Are you losing your hair? Let us help you in bringing back your confidence. Call Us at 1800-0000-0000</p>
+    </div> -->
   </div>
 
-  <footer></footer>
+  <footer>
+    <div class="footer-content">
+      <p>© copyright 2023 | all rights reserved</p>
+    </div>
+  </footer>
   </div>
 </body>
 </html>
